@@ -1,0 +1,38 @@
+﻿<Window x:Class="MathTestProject.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MathTestProject"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFD4BD28"/>
+                <GradientStop Color="#FF32BDCE" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+        <TextBlock x:Name="UserName" Visibility="Visible" Foreground="Black" FontSize="22" Margin="10,10,0,0" FontWeight="Bold"/>
+
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Margin="487,107,0,0">
+            <TextBlock Text="Select your grade:" FontSize="22" Margin="0,0,0,10" FontWeight="Bold"/>
+            
+
+            <StackPanel>
+                <RadioButton x:Name="Grade1RadioButton" Content="Grade 1" FontSize="20" GroupName="GradeGroup"/>
+                <RadioButton x:Name="Grade2RadioButton" Content="Grade 2" FontSize="20" GroupName="GradeGroup"/>
+                <RadioButton x:Name="Grade3RadioButton" Content="Grade 3" FontSize="20" GroupName="GradeGroup"/>
+                <RadioButton x:Name="Grade4RadioButton" Content="Grade 4" FontSize="20" GroupName="GradeGroup"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,258,0,0">
+            <TextBlock Text="Start The Quiz" FontSize="20" Margin="0,0,0,10" FontWeight="Bold"/>
+            <Button x:Name="StartButton" Content="Start" Width="140" Height="70" Click="StartButton_Click" FontSize="24"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

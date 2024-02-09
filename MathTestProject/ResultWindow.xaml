@@ -1,0 +1,19 @@
+﻿<Window x:Class="MathTestProject.ResultWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MathTestProject"
+        mc:Ignorable="d"
+        
+        Title="ResultWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Flag_of_Israel.svg.png"/>
+        </Grid.Background>
+        <TextBlock x:Name="CorrectAnswersTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Margin="10,134,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="IncorrectAnswersTextBlock" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" Margin="10,245,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="AverageGradeTextBlock" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" FontWeight="Bold" Margin="494,0,0,0"/>
+        <Button Content="Close" Click="CloseButton_Click" Margin="610,258,70,122" FontSize="22" FontWeight="Bold"/>
+    </Grid>
+</Window>
